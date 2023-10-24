@@ -20,7 +20,7 @@ public class Points : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision other){
-        if(other.transform.tag == "Player"){
+        if(other.transform.tag == "Chaudron"){
             _joueur.nbPoints += _valeur;
         }
     }
