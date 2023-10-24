@@ -839,7 +839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '01:00:00
+  m_text: '01:00:000
 
 '
   m_isRightToLeft: 0
