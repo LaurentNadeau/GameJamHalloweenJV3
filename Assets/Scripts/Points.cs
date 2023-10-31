@@ -12,7 +12,7 @@ public class Points : MonoBehaviour
     private int _valeur;
 
     [SerializeField]
-    private GameObject _obstacle;
+    private TMP_Text _points;
 
     void Start()
     {
@@ -22,6 +22,7 @@ public class Points : MonoBehaviour
     void OnCollisionEnter(Collision other){
         if(other.transform.tag == "Chaudron"){
             _joueur.nbPoints += _valeur;
+            _points.text = _joueur.nbPoints.ToString();
         }
     }
 }
