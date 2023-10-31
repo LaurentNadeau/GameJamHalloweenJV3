@@ -7,7 +7,7 @@ public class ContactChaudron : MonoBehaviour
     public AudioSource Son;
     private void OnTriggerEnter(Collider other)
         {
-            if(other.gameObject.tag == "Objet"){
+            if(other.gameObject.tag == "Chaudron"){
                 GetComponent<AudioSource>().Play();
                 Destroy(gameObject);       
             }
