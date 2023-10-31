@@ -5,11 +5,13 @@ using UnityEngine;
 public class ContactChaudron : MonoBehaviour
 {
     public AudioSource Son;
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnCollisionEnter(Collision other)
         {
+            
             if(other.gameObject.tag == "Chaudron"){
-                GetComponent<AudioSource>().Play();
-                Destroy(gameObject);       
+                Son.Play();
+                Destroy(gameObject);  
             }
         }        
 }
